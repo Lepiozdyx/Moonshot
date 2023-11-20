@@ -56,6 +56,61 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FA2624672B0C12BD008C6228 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				FA6FEC392AFFF791006E848D /* MoonshotApp.swift */,
+			);
+			name = Application;
+			sourceTree = "<group>";
+		};
+		FA2624682B0C1303008C6228 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FA6FEC3B2AFFF791006E848D /* ContentView.swift */,
+				FA2624632B0C0A65008C6228 /* GridLayoutView.swift */,
+				FA2624652B0C0D29008C6228 /* ListLayoutView.swift */,
+				FA26245B2B0BCD23008C6228 /* MissionView.swift */,
+				FA26245D2B0BE42C008C6228 /* AstronautView.swift */,
+				FA2624612B0C058D008C6228 /* AstronautLabelView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FA2624692B0C133A008C6228 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FA8FD86D2B01477500B37636 /* Astronaut.swift */,
+				FA8FD8712B01537700B37636 /* Mission.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FA26246A2B0C138D008C6228 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FA8FD86F2B01484100B37636 /* Bundle-Decodable.swift */,
+				FA8FD8732B01980B00B37636 /* Color-Theme.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FA26246B2B0C13F3008C6228 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				FA26245F2B0C049B008C6228 /* CustomDividerView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		FA26246C2B0C1409008C6228 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FA6FEC3D2AFFF794006E848D /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		FA6FEC2D2AFFF791006E848D = {
 			isa = PBXGroup;
 			children = (
@@ -75,21 +130,14 @@
 		FA6FEC382AFFF791006E848D /* Moonshot */ = {
 			isa = PBXGroup;
 			children = (
-				FA6FEC392AFFF791006E848D /* MoonshotApp.swift */,
-				FA6FEC3B2AFFF791006E848D /* ContentView.swift */,
-				FA2624632B0C0A65008C6228 /* GridLayoutView.swift */,
-				FA2624652B0C0D29008C6228 /* ListLayoutView.swift */,
-				FA26245B2B0BCD23008C6228 /* MissionView.swift */,
-				FA2624612B0C058D008C6228 /* AstronautLabelView.swift */,
-				FA26245F2B0C049B008C6228 /* CustomDividerView.swift */,
-				FA26245D2B0BE42C008C6228 /* AstronautView.swift */,
-				FA8FD8732B01980B00B37636 /* Color-Theme.swift */,
-				FA8FD86D2B01477500B37636 /* Astronaut.swift */,
-				FA8FD8712B01537700B37636 /* Mission.swift */,
-				FA8FD86F2B01484100B37636 /* Bundle-Decodable.swift */,
+				FA2624672B0C12BD008C6228 /* Application */,
+				FA2624682B0C1303008C6228 /* Views */,
+				FA26246A2B0C138D008C6228 /* Extensions */,
+				FA26246B2B0C13F3008C6228 /* Components */,
+				FA2624692B0C133A008C6228 /* Models */,
 				FA8FD8692B01447900B37636 /* astronauts.json */,
 				FA8FD86A2B01447900B37636 /* missions.json */,
-				FA6FEC3D2AFFF794006E848D /* Assets.xcassets */,
+				FA26246C2B0C1409008C6228 /* Resources */,
 				FA6FEC3F2AFFF794006E848D /* Preview Content */,
 			);
 			path = Moonshot;
