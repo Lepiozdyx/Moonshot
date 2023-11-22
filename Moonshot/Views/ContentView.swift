@@ -26,10 +26,16 @@ struct ContentView: View {
             .background(.darkBackground)
             .preferredColorScheme(.dark)
             .toolbar {
-                Toggle(
-                    isShowingGrid ? "Show List" : "Show Grid",
-                    isOn: $isShowingGrid
-                )
+                Button(
+                    "Сhanging icon display",
+                    systemImage: isShowingGrid 
+                        ? "list.bullet"
+                        : "square.grid.2x2"
+                ) {
+                    withAnimation {
+                        isShowingGrid.toggle()
+                    }
+                }
             }
         }
     }

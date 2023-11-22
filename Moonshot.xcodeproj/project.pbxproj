@@ -107,6 +107,8 @@
 			isa = PBXGroup;
 			children = (
 				FA6FEC3D2AFFF794006E848D /* Assets.xcassets */,
+				FA8FD86A2B01447900B37636 /* missions.json */,
+				FA8FD8692B01447900B37636 /* astronauts.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -135,8 +137,6 @@
 				FA26246A2B0C138D008C6228 /* Extensions */,
 				FA26246B2B0C13F3008C6228 /* Components */,
 				FA2624692B0C133A008C6228 /* Models */,
-				FA8FD8692B01447900B37636 /* astronauts.json */,
-				FA8FD86A2B01447900B37636 /* missions.json */,
 				FA26246C2B0C1409008C6228 /* Resources */,
 				FA6FEC3F2AFFF794006E848D /* Preview Content */,
 			);

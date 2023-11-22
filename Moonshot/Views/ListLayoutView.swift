@@ -13,9 +13,7 @@ struct ListLayoutView: View {
     
     var body: some View {
         List(missions) { mission in
-            NavigationLink {
-                MissionView(mission: mission, astronauts: astronauts)
-            } label: {
+            NavigationLink(value: mission) {
                 HStack {
                     Image(mission.image)
                         .resizable()
@@ -32,15 +30,13 @@ struct ListLayoutView: View {
                             .font(.caption)
                             .foregroundStyle(.white.opacity(0.7))
                     }
-                    .padding(.vertical)
-                    .frame(maxWidth: .infinity)
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
                     .background(.lightBackground)
                     .clipShape(.rect(cornerRadius: 20))
                     .overlay(
                         RoundedRectangle(cornerRadius: 20)
                             .stroke(.lightBackground)
                     )
-                    .padding(.trailing, 8)
                 }
                 .clipShape(.rect(cornerRadius: 20))
                 .overlay(
@@ -51,6 +47,9 @@ struct ListLayoutView: View {
             .listRowBackground(Color(.darkBackground))
         }
         .listStyle(.plain)
+        .navigationDestination(for: Mission.self) { selectedMission in
+            MissionView(mission: selectedMission, astronauts: astronauts)
+        }
     }
 }
 
